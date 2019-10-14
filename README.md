@@ -1,5 +1,9 @@
 # vue-videos-experiment
 
+This is a work-in-progress Vue site that lets users search for videos using the YouTube API.
+
+Content and instructions came from the [Vue JS Essentials with Vuex and Vue Router course on Udemy](https://www.udemy.com/course/vue-js-course/)
+
 ## Project setup
 ```
 npm install
@@ -9,21 +13,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
