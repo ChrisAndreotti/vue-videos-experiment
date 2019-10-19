@@ -20,7 +20,6 @@ export default {
   },
   methods: {
     onTermChange(searchTerm) {
-      console.log(API_KEY);
       axios.get('https://www.googleapis.com/youtube/v3/search', {
         params: {
           key: API_KEY,
