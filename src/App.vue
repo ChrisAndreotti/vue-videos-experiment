@@ -9,7 +9,8 @@
 import axios from 'axios';
 import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList'
-const API_KEY = '';
+
+const API_KEY = process.env.NODE_ENV === 'production' ? process.env.VUE_APP_PROD_YOUTUBE_DATA_API_KEY : process.env.VUE_APP_YOUTUBE_DATA_API_KEY;
 
 export default {
   name: 'App',
@@ -19,6 +20,7 @@ export default {
   },
   methods: {
     onTermChange(searchTerm) {
+      console.log(API_KEY);
       axios.get('https://www.googleapis.com/youtube/v3/search', {
         params: {
           key: API_KEY,
