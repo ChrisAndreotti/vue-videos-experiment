@@ -1,6 +1,6 @@
 <template>
     <div v-if="video">
-        <div>
+        <div class="embed-responsive embed-responsive-16by9">
             <iframe :src="videoUrl" />
         </div>
         <div class="details">
@@ -17,7 +17,7 @@ export default {
     computed: {
         videoUrl() {
             const { videoId } = this.video.id;
-            return `https://www.youtube.com/embed${videoId}`;
+            return `https://www.youtube.com/embed/${videoId}`;
         }
     }
 }
