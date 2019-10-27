@@ -1,6 +1,17 @@
 # vue-videos-experiment
 
-This is a work-in-progress Vue demo site that lets users search for videos using the YouTube API.
+This is a Vue demo site that lets users search for videos using the YouTube API. 
+
+The application demonstrates the following key ares of technical interest:
+
+* Communication between components, including: 
+    * Using `v-bind` expression (and corresponding `':'` shorthand) to pass props to child components
+    * Using the `$emit` function to send events to parent components
+    * Using event directives like `v-on` (and corresponding `'@'` shorthand) to set up listener methods for events
+* Using `v-for` to create lists in Vue templates
+* Conditionally displaying template content using `v-if` and `v-else` directives
+* Using computed properties for rendering data to Vue templates
+* Prop validation on component properties
 
 Content and instructions came from the [Vue JS Essentials with Vuex and Vue Router course on Udemy](https://www.udemy.com/course/vue-js-course/)
 
