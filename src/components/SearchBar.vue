@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <input @keydown.enter="onInput" />
+    <div class="form-group">
+        <label for="searchInput">Search for YouTube videos:</label>
+        <input id="searchInput" class="form-control" @keydown.enter="onInput" placeholder="Enter a search term and hit enter" />
     </div>
 </template>
 
@@ -21,7 +22,6 @@ export default {
     }
 
     div {
-        text-align: center;
         margin: 20px;
     }
 </style>
