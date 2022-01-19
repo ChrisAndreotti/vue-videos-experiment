@@ -1,5 +1,5 @@
 <template>
-    <div class="form-group">
+    <div data-test="search-box" class="form-group">
         <label for="searchInput">Search for YouTube videos:</label>
         <input id="searchInput" class="form-control" @keydown.enter="onInput" placeholder="Enter a search term and hit enter" />
     </div>
